@@ -1,0 +1,108 @@
+/* 
+    Document   : screen
+    Created on : 21/11/2012, 09:49:15 AM
+    Author     : Mary De Nóbrega <denobrega.mary@gmail.com>
+    URL        : http://marydenobrega.com/
+    Description:
+        Screen styles.
+*/
+
+body {
+    background: url("/images/bg.png") 0 0 no-repeat;
+    color: #ddd;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 1.2em;
+    height: 220px;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+body.settings {
+    background-image: none;
+    margin: 0px;
+    height: 290px;
+    width: 250px;
+}
+
+img { border: none; }
+
+a, a:visited, a:link, a:active, a:hover {
+    color: #aaa;
+    outline: none;
+    text-decoration: none;
+}
+
+.error { color: #f00; }
+
+#debug { color: red; display: none; }
+
+#watch {
+    color: #666;
+    font-family: "Courier New";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2em;
+    padding: 1px;
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    top: 3px;
+    width: 120px;
+}
+
+.container {
+    height: 100%;
+    margin: 15px 5px 0px 0px;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+}
+
+input, select, .buttons, #status {
+    margin: 5px 0px 10px;
+    width: 175px;
+}
+
+body.settings input, body.settings select, body.settings #status { width: 100%; }
+
+input, select { 
+    line-height: 1.2em; 
+    padding: 2px;
+}
+
+input#task, input#calendar { border: 1px solid #333; }
+
+.buttons { margin: 0 0 10px; text-align: center; }
+
+.buttons input {
+    height: 30px;
+    margin: 0px 5px;
+    text-align: center;
+    width: 30px;
+}
+
+#status {
+    background-color: #eee;
+    border: 1px solid #333;
+    color: #336699;
+    overflow: hidden;
+    padding: 3px 0px;
+    text-align: center;
+}
+
+body.settings #status { background-color: transparent; border: none; }
+
+#footer {
+    border-top: 1px solid #ccc;
+    bottom: 5px;
+    font-size: 11px;
+    position: absolute;
+    width: 175px;
+}
+
+#footer .author, #footer .version { float: left; }
+
+#footer .author { width: 125px; }
+
+#footer .version { text-align: right; width: 50px; }

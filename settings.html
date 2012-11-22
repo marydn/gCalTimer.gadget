@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>gCalTimer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/css/screen.css" /> 
+</head>
+
+<body class="settings">
+
+<strong>1. Enter Google Credentials:</strong>
+
+<hr />
+
+<label for="gMail">E-mail:</label>
+<input type="text" id="gMail" name="gMail" value="" onkeydown="document.getElementById('comboList').options.length=0" />
+
+<label for="gPassword">Password:</label>
+<input type="password" id="gPassword" name="gPassword" value="" onkeydown="document.getElementById('comboList').options.length=0" />
+
+<input type="button" value="Retrieve my calendars" onclick="startAuth('list')" />
+
+<br />
+
+<strong>2. Choose a calendar:</strong>
+
+<hr />
+
+<select id="comboList">
+</select>
+
+<div id="status"></div>
+
+<div id="debug"></div>
+
+<script type="text/javascript" src="/js/settings.js"></script>
+
+</body>
+</html>

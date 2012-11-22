@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>gCalTimer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/css/screen.css" /> 
+</head>
+
+<body onload="startAuth();">
+
+<g:background id="background" style="background-color: transparent;" />
+
+<div id="watch">-:--:--:--</div>
+
+<div class="container">
+    <label for="task">Task:</label>
+    <input type="text" name="task" id="task" value="" disabled="disabled" />
+    
+    <label for="calendar">Calendar:</label>
+    <input type="text" name="calendar" id="calendar" value="" disabled="disabled" />
+    
+    <div class="buttons">
+        <input type="button" id="start" name="start" value="►" title="Start" onclick="if(!timerRunning) { startTimer() } else { pauseTimer() }" disabled="disabled" />
+        <input type="button" id="stop" name="stop" value="■" title="Stop and submit event." onclick="stopTimer()" disabled="disabled" />
+        <input type="button" id="cancel" name="cancel" value="●" title="Reset" onclick="cancelTimer()" disabled="disabled" />
+    </div>
+    
+    <div id="status"></div>
+    
+    <div id="debug"></div>
+    
+    <div id="footer">
+        <a href="http://marydenobrega.com/" class="author">Mary De Nóbrega</a>
+        <a href="http://marydenobrega.com/gCalTimer/" class="version">v1.0</a>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="/js/startup.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+
+</body>
+</html>

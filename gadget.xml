@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+    <name>gCalTimer</name>
+    <author name="Mary De Nóbrega">
+      <info url="http://marydenobrega.com/" />
+      <logo src="/images/logo-mary.png" />
+    </author>
+    <copyright>© 2012</copyright>
+    <description>Gadget to log time passed on tasks directly to Google Calendar.</description>
+    <version>1.0</version>
+    <icons>
+      <icon src="/images/icon-calendar.png" />
+    </icons>
+    <hosts>
+      <host name="sidebar">
+        <base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+        <platform minPlatformVersion="1.0" />
+        <permissions>Full</permissions>
+      </host>
+    </hosts>
+</gadget>
