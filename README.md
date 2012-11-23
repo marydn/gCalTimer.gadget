@@ -33,4 +33,4 @@ And... Internet connection? =)
 
 ###Note
 
-Just tested on Windows 7. Let me now if works in other versions of Windows.
+Just tested on Windows 7. Let me know if works in other versions of Windows.
